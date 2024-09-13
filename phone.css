@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    background:linear-gradient(teal, white, pink);
+}
+
+
+
+h1 {
+    color: rgb(54, 78, 102);
+    display:flex;
+    justify-content: center;
+    font-size: 8rem;
+    filter: drop-shadow(30px 10px 4px #4444dd79);
+}
+
+h2 {
+display: flex;
+justify-content: center;
+}
+
+input{
+    font-size: 2rem;
+   height: 4rem;
+   width: 24rem;
+}
+
+button {
+    height:2rem;
+}
+
+
+.sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+p {
+    font-size: 3rem;
+    font-family: InkFree;
+}

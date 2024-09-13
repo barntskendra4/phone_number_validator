@@ -1,0 +1,39 @@
+1st Capturing Group (1\s|1)?
+? matches the previous token between zero and one times, as many times as possible, giving back as needed (greedy)
+1st Alternative 1\s
+1 matches the character 1 with index 4910 (3116 or 618) literally (case sensitive)
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+2nd Alternative 1
+1 matches the character 1 with index 4910 (3116 or 618) literally (case sensitive)
+2nd Capturing Group (\(\d{3}\)|\d{3})
+
+
+1st Alternative \(\d{3}\)
+\( matches the character ( with index 4010 (2816 or 508) literally (case sensitive)
+\d matches a digit (equivalent to [0-9])
+{3} matches the previous token exactly 3 times
+\) matches the character ) with index 4110 (2916 or 518) literally (case sensitive)
+
+
+
+2nd Alternative \d{3}
+\d matches a digit (equivalent to [0-9])
+{3} matches the previous token exactly 3 times
+
+3rd Capturing Group (-|\s)?
+? matches the previous token between zero and one times, as many times as possible, giving back as needed (greedy)
+1st Alternative -
+- matches the character - with index 4510 (2D16 or 558) literally (case sensitive)
+2nd Alternative \s
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+\d matches a digit (equivalent to [0-9])
+{3} matches the previous token exactly 3 times
+4th Capturing Group (-|\s)?
+? matches the previous token between zero and one times, as many times as possible, giving back as needed (greedy)
+1st Alternative -
+- matches the character - with index 4510 (2D16 or 558) literally (case sensitive)
+2nd Alternative \s
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+\d matches a digit (equivalent to [0-9])
+{4} matches the previous token exactly 4 times
+$ asserts position at the end of the string, or before the line terminator right at the end of the string (if any)
